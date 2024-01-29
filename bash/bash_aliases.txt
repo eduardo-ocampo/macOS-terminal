@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# VIEWING
+alias a="ls"
+alias aa="ls -l"
+alias la="ls -la"
+
+# NAVIGATION
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# COMMON DIRECTORIES
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
+alias cdgit="cd ~/Documents/GitHub"
+alias home="cd ~"
+
+# SPECIAL DIRECTORIES
+alias cdpy="cd ~/Desktop/Python"
+
+# PYTHON
+alias py="python"
+alias jpy="jupyter notebook"
+
+# GIT
+# alias g="git"
+ alias gs="git status"
+# alias gd="git diff"
+# alias gb="git branch"
+# alias gm="git checkout master"
+
+# SHOW/HIDE HIDDEN FILES
+# alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
+# alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
+
+# SHOW/HIDE DESKTOP ICONS
+# alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+# alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder
+
+# EASIER DOTFILE EDITING
+alias aliases="nano ~/.bash_aliases && . ~/.bash_aliases"
+alias bashprofile="nano ~/.bash_profile && . ~/.bash_profile"
+alias bashprompt="nano ~/.bash_prompt && . ~/.bash_prompt"

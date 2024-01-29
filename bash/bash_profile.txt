@@ -1,0 +1,6 @@
+# Created profile using a tutorial by Charles Dobson
+# https://medium.com/@charlesdobson/how-to-customize-your-macos-terminal-7cce5823006e
+
+# Adding source dot files
+source ~/.bash_prompt
+source ~/.bash_aliases

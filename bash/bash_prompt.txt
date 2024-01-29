@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+export CLICOLOR=1
+# export LSCOLORS=GxcxdxDxBxcxgxcxdxgxgx
+export LSCOLORS=ExFxBxDxCxexexaxaxaxax
+
+# GIT FUNCTIONS
+git_branch() {
+    git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+
+# PS1="\[\033[33m\]\w\n\[\033[00m\]\u[\v] ^.^ \\$ \[$(tput sgr0)\]"
+PS1="\[\033[33m\]\w\n\[\033[00m\]"
+# add username
+PS1+="\[\e[0;92m\]\u\[\e[m\]"
+# add git branch info
+PS1+="\[\e[0;95m\]\$(git_branch)\[\e[m\]"    # current branch
+# add space and end char
+PS1+=" ^.^ \\$ "
+export PS1;
